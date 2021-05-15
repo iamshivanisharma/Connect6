@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" prefWidth="468.0" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shivani.connect6.Controllerr">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="298.0" minWidth="225" prefWidth="225" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+        <Pane fx:id="insertedDiscPane" prefHeight="400.0" prefWidth="234.0" GridPane.rowIndex="1" />
+        <VBox prefHeight="200.0" prefWidth="277.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Region prefHeight="126.0" prefWidth="269.0" VBox.vgrow="ALWAYS" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="226.0" text="Player One Disc Color" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </Label>
+            <ColorPicker fx:id="PlayerOneColor" minHeight="25.0" prefHeight="60.0" prefWidth="255.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="232.0" text="Player Two Disc Color" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ColorPicker fx:id="PlayerTwoColor" minHeight="25.0" prefHeight="40.0" prefWidth="226.0" />
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="237.0" text="Player One Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="PlayerOneTextField" alignment="CENTER" maxWidth="200.0">
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+            </TextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="228.0" text="Player Two Name" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="12.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="PlayerTwoTextField" alignment="CENTER" maxWidth="200.0">
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="SetNamesButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" text="Set Names and Color" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="30.0" top="12.0" />
+               </VBox.margin>
+            </Button>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+                <Label fx:id="PlayerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="290.0" text="Player 1" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="29.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="18.0" prefWidth="325.0" text="Turn" textFill="WHITE">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            </children>
+        </VBox>
+    </children>
+</GridPane>
